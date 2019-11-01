@@ -1,0 +1,664 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans:600,700|Oxygen:300,400&display=swap);
+body,
+html {
+	font-family: Oxygen, sans-serif;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #474747;
+	font-weight: 300;
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+}
+li,
+p {
+	font-size: 1rem;
+	display: block;
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	color: #fff;
+}
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Open Sans', sans-serif;
+}
+.spinner-ctn {
+	position: absolute;
+	top: 0;
+	background-color: #ef5521;
+	height: 100vh;
+	width: 100%;
+	z-index: 999999;
+	text-align: center;
+}
+.no-scroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+.spinner {
+	width: 300px;
+	height: 40px;
+	text-align: center;
+	margin: 400px auto;
+}
+.spinner h6 {
+	color: #fff;
+}
+.spinner div {
+	height: 100%;
+	width: 6px;
+	background-color: #fff;
+	display: inline-block;
+	animation: animeDiv 1.2s infinite ease-in-out;
+}
+@keyframes animeDiv {
+	0%,
+	100%,
+	40% {
+		transform: scaleY(.4);
+	}
+	20% {
+		transform: scaleY(1);
+	}
+}
+.spinner .rectagle2 {
+	animation-delay: -1.1s;
+}
+.spinner .rectagle3 {
+	animation-delay: -1s;
+}
+.spinner .rectagle4 {
+	animation-delay: -.9s;
+}
+.spinner .rectagle5 {
+	animation-delay: -.8s;
+}
+.top-menu {
+	background: #ef5521;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
+}
+.contacts_email_cell {
+	display: inline-block;
+	font-size: .9rem;
+	margin-right: 10px;
+	margin-top: 12px;
+	font-weight: 400;
+	font-family: Montserrat, sans-serif;
+	text-align: inherit;
+	color: rgba(255, 255, 255, 1);
+}
+dl,
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: .7rem;
+}
+.social li {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 15px;
+}
+.social a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	padding: 6px 10px;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	transition: .5s;
+}
+.social .instagram {
+	background: transparent linear-gradient(180deg, #cf238a 0, #a01b1b 49%, #dbc42d 100%) 0 0 no-repeat padding-box;
+	padding: 10px 12px;
+	border-radius: 50%;
+}
+.social .facebook {
+	background-color: #3b5998;
+	padding: 10px 15px;
+	border-radius: 50%;
+}
+.social .linkedin {
+	background-color: #0e76a8;
+	padding: 10px 12px;
+	border-radius: 50%;
+}
+.navbar {
+	padding: 0 0;
+	box-shadow: 1px 4px 14px 3px rgba(79, 109, 122, .3);
+	position: relative;
+	z-index: 3;
+}
+.navbar-brand img {
+	width: 80px;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-weight: 400;
+	text-transform: capitalize;
+	-webkit-transition: all .3s ease;
+	transition: all .5s ease;
+	color: #333;
+	font-family: Montserrat, sans-serif;
+	display: block;
+	padding: 5px 0;
+	margin-left: 30px;
+	font-size: .9rem;
+	letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	font-weight: 600;
+	border-bottom: 5px solid #ef5521;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+	border-bottom: 5px solid #ef5521;
+}
+.navbar-toggler span {
+	color: #ef5521;
+	font-size: 25px;
+	margin-right: 20px;
+	cursor: pointer;
+	border: none;
+}
+.navbar-light .navbar-toggler {
+	border-color: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+	outline: 0;
+	box-shadow: none;
+}
+.navbar.compressed {
+	padding: 2px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .38s ease-in-out;
+	transition: all .38s ease-in-out;
+}
+#hero-section {
+	background: linear-gradient(rgba(83, 120, 149, .75), rgba(0, 0, 0, .75)), url(img/hero-vinos.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 630px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.title_hero {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 800;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+.slogan {
+	display: block;
+	color: #fff;
+	font-size: 1.2rem;
+	font-family: Montserrat, sans-serif;
+}
+.btn {
+	text-transform: capitalize;
+	font-weight: 600;
+	font-family: Montserrat, sans-serif;
+	letter-spacing: 1px;
+}
+.btn:hover {
+	background-color: rgba(108, 192, 229, .75);
+}
+.btn_button {
+	margin-top: 20px;
+	background-color: #ef5521;
+	text-transform: uppercase;
+}
+.btn_button:hover {
+	background-color: rgba(239, 85, 33, .7);
+}
+.btn:focus {
+	outline: 0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.mocambique {
+	background-image: linear-gradient(to top, #09203f 0, #537895 100%);
+}
+.mocambique h2 {
+	color: #fff;
+	font-weight: 600;
+}
+.mocambique p {
+	color: #f2f2f2;
+}
+.section_space {
+	padding: 35px 0;
+}
+.page_title {
+	text-transform: capitalize;
+	color: #ef5521;
+	font-family: Montserrat, sans-serif;
+	border-bottom: 2px solid #ef5521;
+	width: 300px;
+	margin: 0 auto;
+}
+.func_content {
+	margin-top: 40px;
+}
+.fun_title {
+	font-weight: 700;
+	margin-top: 15px;
+}
+.servicos .imagem {
+	-webkit-box-shadow: 2px 4px 17px -1px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 2px 4px 17px -1px rgba(0, 0, 0, 1);
+	box-shadow: 2px 4px 17px -1px rgba(0, 0, 0, 1);
+	text-align: center;
+}
+.imagem {
+	margin: 0 auto;
+}
+.parque {
+	background: linear-gradient(rgba(83, 120, 149, .75), rgba(0, 0, 0, .75)), url(img/Parque_Mucapana-.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 390px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.katembe {
+	background: linear-gradient(rgba(83, 120, 149, .75), rgba(0, 0, 0, .75)), url(img/katembe.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 390px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.imagem h3 {
+	text-align: center;
+	margin: auto;
+}
+.servicos a {
+	color: #fff;
+	transition: .3s ease-in-out;
+}
+.servicos a:hover {
+	color: #ef5521;
+}
+.call_action {
+	background: url(img/call.jpg);
+	height: 290px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #fff;
+}
+.call_action .contacts_email_cell {
+	background: rgba(0, 0, 0, .75);
+	border-radius: 5px;
+	padding: 10px 40px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.vantagem_content {
+	margin-top: 30px;
+}
+.vanta_content i {
+	color: #ef5521;
+	font-size: 1.5rem;
+}
+.vanta_content ul {
+	margin-top: 50px;
+}
+.vanta_list li {
+	padding-bottom: 10px;
+}
+.footer {
+	background: #1e1f1f;
+	color: #fff;
+	padding: 35px 0;
+	overflow: hidden;
+	position: relative;
+}
+.footer h4 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+.blue {
+	color: #46aef7;
+}
+.orange {
+	color: #ef5521;
+}
+.bar_sides {
+	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
+	min-height: 250px;
+	padding: 0 20px;
+}
+.menu_list li {
+	text-transform: capitalize;
+}
+.redes li {
+	display: inline-block;
+	margin-right: 5px;
+}
+.redes a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	padding: 6px 10px;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	transition: .5s;
+}
+.redes .instagram {
+	background: transparent linear-gradient(180deg, #cf238a 0, #a01b1b 49%, #dbc42d 100%) 0 0 no-repeat padding-box;
+	padding: 10px 12px;
+	border-radius: 50%;
+}
+.redes .facebook {
+	background-color: #3b5998;
+	padding: 10px 15px;
+	border-radius: 50%;
+}
+.redes .linkedin {
+	background-color: #0e76a8;
+	padding: 10px 12px;
+	border-radius: 50%;
+}
+.built-by {
+	background: #000;
+	color: #fff;
+}
+.built-by p {
+	padding: 12px;
+	margin-bottom: 0;
+	font-size: 11px;
+	font-weight: 600;
+	font-family: Montserrat, sans-serif;
+}
+#parque_mucapana {
+	background: linear-gradient(rgba(83, 120, 149, .75), rgba(0, 0, 0, .75)), url(img/vinos_hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.roteiro_content h2 {
+	margin-bottom: 30px;
+	color: #ef5521;
+}
+.roteiro_content i {
+	color: #ef5521;
+	padding-right: 10px;
+}
+.roteiro_content p {
+	line-height: 2.2;
+}
+.notes {
+	font-style: italic;
+	font-weight: 800;
+	font-family: Montserrat, sans-serif;
+}
+.custos h3 {
+	color: #ef5521;
+}
+.number_preco {
+	font-weight: 800;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.4rem;
+}
+.notes.preco {
+	color: #46aef7;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+}
+.itinerario {
+	margin: 30px 0;
+}
+.itinerario h3 {
+	color: #ef5521;
+	text-transform: capitalize;
+}
+.contactForm {
+	padding: 40px 0;
+}
+.vinos_contact {
+	font-weight: 800;
+}
+.contact_list i {
+	color: #ef5521;
+	padding-right: 10px;
+}
+.contact_list {
+	margin-top: 30px;
+}
+.contactForm ul {
+	padding: 0 !important;
+}
+.contactForm p {
+	margin: 20px 0;
+}
+.bold {
+	font-weight: 800;
+	font-family: Montserrat, sans-serif;
+}
+.mission_content {
+	color: #ef5521;
+}
+.contact-btn {
+	background-color: #ef5521;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+}
+.contact-btn:hover {
+	background-color: rgba(239, 85, 33, .7);
+}
+@media screen and (max-width: 415px) {
+	.mobile_hide {
+		display: none;
+	}
+	.top-menu .social {
+		text-align: center;
+	}
+	.social li {
+		font-size: 12px;
+	}
+	.social a {
+		width: 40px;
+		height: 40px;
+		display: block;
+		padding: 6px 10px;
+		line-height: 40px;
+		border-radius: 50%;
+		text-align: center;
+		transition: .5s;
+	}
+	.navbar-brand img {
+		width: 70px;
+		margin-left: 20px;
+	}
+	.slogan {
+		display: none;
+	}
+	.title_hero {
+		text-align: center;
+		font-size: 1.7rem;
+	}
+	.btn {
+		text-align: center !important;
+		margin: 20px auto;
+		display: block;
+		width: 150px;
+		font-size: .8rem;
+	}
+	.func_content img {
+		width: 100px !important;
+	}
+	#hero-section {
+		height: 320px;
+	}
+	.social li {
+		margin-left: 0;
+	}
+	.mocambique h2,
+	.page_title h2 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.mocambique p {
+		text-align: center;
+	}
+	.box_movel {
+		margin: 30px 0;
+	}
+	.box_serv_mobile {
+		margin-bottom: 30px;
+	}
+	.katembe,
+	.parque {
+		height: 200px;
+	}
+	.imagem h3 {
+		font-size: 1.3rem;
+	}
+	.call_action h1 {
+		font-size: 1.7rem;
+	}
+	.call_action h2 {
+		font-size: 1.3rem;
+	}
+	.contacts_email_cell {
+		font-size: .9rem !important;
+	}
+	.footer {
+		text-align: center;
+	}
+	.hidden-sm {
+		display: none;
+	}
+	.bar_sides {
+		min-height: 165px;
+	}
+	#parque_mucapana {
+		height: 150px;
+	}
+	.parque_mucapana > .title_hero {
+		font-size: .6rem !important;
+	}
+	.roteiro_content h2 {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	.mobile_hide {
+		display: none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		font-size: .8rem;
+		margin-left: 10px;
+	}
+	.navbar-brand img {
+		width: 70px;
+	}
+	.hero_content,
+	.parque_mucapana {
+		text-align: center;
+	}
+	.box_movel {
+		margin: 30px 0;
+	}
+	.box_serv_mobile {
+		margin-bottom: 30px;
+	}
+	.katembe,
+	.parque {
+		height: 300px;
+	}
+}
+@media screen and (max-width: 1025px) {
+	.mobile_hide {
+		display: none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		font-size: .8rem;
+		margin-left: 10px;
+	}
+	.navbar-brand img {
+		width: 70px;
+	}
+	.hero_content,
+	.parque_mucapana {
+		text-align: center;
+	}
+	.box_movel {
+		margin: 30px 0;
+	}
+	.box_serv_mobile {
+		margin-bottom: 30px;
+	}
+	.katembe,
+	.parque {
+		height: 300px;
+	}
+}
