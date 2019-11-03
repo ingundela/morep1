@@ -237,7 +237,45 @@ h6 {
 	display: block;
 }
 
-/*--carousel--*/
+/*--search_now --*/
+.search_now {
+	
+}
+
+.search_content {
+	display: flex;
+	justify-content: space-between;
+	background: rgba(0, 0, 0, 0.5);
+	max-width: 700px;
+	width: 100%;
+	padding: 15px 30px;
+	border-radius: 5px;
+}
+
+.search_content .input {
+	width: 100%;
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+
+.search_btn {
+	background: #000;
+	width: 10%;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+	border: none;
+}
+
+.search_btn .fas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: #fff;
+}
+/*--Products and perks--*/
 .ready {
 	padding: 40px 0;
 	-webkit-box-shadow: 0px 11px 18px -6px rgba(0, 0, 0, 0.75);
@@ -525,7 +563,7 @@ h6 {
 .vision {
 	padding-bottom: 20px;
 	max-width: 900px;
-	margin: 0 auto;
+
 }
 
 .line_break {
@@ -587,4 +625,17 @@ h6 {
 
 .vs {
 	color: #eb0029;
+}
+
+.buy_now {
+	color: #fff;
+	background: #eb0029;
+	margin: 15px 0 30px 0;
+	text-transform: capitalize;
+	border-radius: 20px;
+	padding: 10px 50px;
+}
+
+.phone-deals .rest_page {
+	background-color: #f5f5f5;
 }
